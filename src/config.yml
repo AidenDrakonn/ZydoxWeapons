@@ -1,0 +1,158 @@
+messages:
+  boughtammo: '&8&l[&b&lZydoxWeapons&8&l] &fYou just bough &b%amount% &fammo for &b%price%'
+  reloadammo: '&8&l[&b&lZydoxWeapons&8&l] &fYou weapon is out of ammo, please do /load'
+  noammo: '&8&l[&b&lZydoxWeapons&8&l] &fYou need more ammo to reload this weapon, do /ammo to buy ammo'
+  outofuses: '&8&l[&b&lZydoxWeapons&8&l] &fWeapon has ran out of uses and just broke'
+  insufficientfunds: '&8&l[&b&lZydoxWeapons&8&l] &fYou do not have enough money to buy that!'
+  nopermission: '&8&l[&b&lZydoxWeapons&8&l] &fYou do not have permission to do that!'
+  invalidcommand: '&8&l[&b&lZydoxWeapons&8&l] &fIncorrect command do /zweapons help for help!'
+  cantunload: '&8&l[&b&lZydoxWeapons&8&l] &fYou cant unload this item'
+  ammounloaded: '&8&l[&b&lZydoxWeapons&8&l] &fUnloaded &b%amount% &fammo'
+  cantload: '&8&l[&b&lZydoxWeapons&8&l] &fYou cant load this item'
+  ammoloaded: '&8&l[&b&lZydoxWeapons&8&l] &fLoaded &b%amount% &fammo'
+
+ammo:
+  item:
+    name: '&8ammo'
+    material: GOLD_NUGGET
+    lore:
+      - '&fuse this ammo to load weapons'
+      - '&fuse /load while holding a weapon to load it'
+  gui:
+    size: 27
+    title: 'Ammo Shop'
+    fillitem:
+      name: ' '
+      material: STAINED_GLASS_PANE:5
+      enchanted: false
+    items:
+      2bundle:
+        name: '&b2 Ammo'
+        lore:
+          - '&fBuy 2 ammo'
+          - '&fCost: &b2000'
+        amount: 2
+        cost: 2000
+        invslot: 10
+
+      8bundle:
+        name: '&b8 Ammo'
+        lore:
+          - '&fBuy 8 Ammo'
+          - '&fCost: &b8000'
+        amount: 8
+        cost: 8000
+        invslot: 13
+
+      16bundle:
+        name: '&b16 Ammo'
+        lore:
+          - '&fBuy 16 ammo'
+          - '&fCost: &b16000'
+        amount: 16
+        cost: 16000
+        invslot: 16
+
+minionstaff:
+  item:
+    name: '&2&lMinion Staff'
+    material: STICK
+    lore:
+      - '&fSpawns zombie minions to fight for you'
+      - '&fAmmo: &b%ammo%'
+      - '&fUses left: &b%uses%'
+    enchanted: true
+  minion:
+    stayfor: 10
+    amount: 5
+    health: 20
+    name: '&aMinion'
+    equipment:
+      weapon:
+        item: IRON_SWORD
+        enchantments:
+          - sharpness:2
+          - fireaspect:1
+      helmet:
+        item: LEATHER_HELMET
+        enchantments:
+          - protection:2
+          - unbreaking:1
+      chestplate:
+        item: DIAMOND_CHESTPLATE
+        enchantments:
+          - protection:1
+          - thorns:1
+      leggings:
+        item: IRON_LEGGINGS
+        enchantments:
+          - protection:2
+          - thorns:1
+      boots:
+        item: LEATHER_BOOTS
+        enchantments:
+          - protection:2
+          - unbreaking:1
+  maxammo: 2
+  uses: 8
+  repairtoken: 2
+
+witchstaff:
+  item:
+    name: '&5&lWitch Staff'
+    material: BLAZE_ROD
+    lore:
+      - '&fSpawns bats that will attack other players'
+      - '&fAmmo: &b%ammo%'
+      - '&fUses left: &b%uses%'
+    enchanted: true
+  bat:
+    stayfor: 10
+    amount: 10
+    health: 1
+    damage: 2
+    effectchance: 0.8
+    effects:
+      poison:
+        duration: 6
+        level: 1
+      slowness:
+        duration: 10
+        level: 1
+  maxammo: 2
+  uses: 8
+  repairtoken: 2
+
+cobwebbow:
+  item:
+    name: '&7&lCobweb Bow'
+    material: BOW
+    lore:
+      - '&fSpawns cobwebs Whereever your arrow lands!'
+      - '&fAmmo:&b %ammo%'
+      - '&fUses left:&b %uses%'
+    enchanted: true
+  linger: 3
+  maxammo: 8
+  uses: 32
+  repairtoken: 8
+
+flamethrower:
+  item:
+    name: '&6&lFlame Thrower'
+    material: GOLD_AXE
+    lore:
+      - '&fShoots flames of death'
+      - '&fAmmo:&b %ammo%'
+      - '&fUses left:&b %uses%'
+    enchanted: true
+  linger: 4
+  power: 1
+  damage: 5
+  maxammo: 32
+  uses: 256
+  repairtoken: 64
+  fireonhit: false
+  ammoonfire: false
+  catchattackedonfire: true
+  catchattackedonfireduration: 3

@@ -1,0 +1,14 @@
+name: ZydoxWeapons
+version: 0.1
+main: me.drakonn.zydoxweapons.ZydoxWeapons
+author: Drakonn
+commands:
+  ammo:
+    description: Opens the ammo shop
+  load:
+    description: Loads ammo into weapon in hand
+  unload:
+    description: Unloads ammo from weapon in hand
+  zweapons:
+    aliases: [zw, zweapon]
+    description: Admin commands for ZydoxWeapons
